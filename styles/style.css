@@ -5,3 +5,9 @@ body{
     width: 1280px;
     background-repeat: no-repeat;
 }
+
+p {
+    font-family: 'Georgia';
+    color: #F1CDB3;
+    font-size: 32px;
+}
