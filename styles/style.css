@@ -25,11 +25,23 @@ a{
 }
 a:hover{
     text-decoration: underline;
-    color: #FAFAFA;
+    color: #F1CDB3;
+    text-decoration-thickness: 5px;
 }
 
 p {
     font-family: 'Georgia';
     color: #F1CDB3;
     font-size: 32px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+img{
+    width: 698px;
+    height: 728px;
 }
