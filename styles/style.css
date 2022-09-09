@@ -1,9 +1,14 @@
 body{
-    display: flex;
-    flex-direction: row;
     background-image: url(../assets/start-screen-gradient-background.png);
     width: 1280px;
     background-repeat: no-repeat;
+}
+
+header{
+display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 p {
