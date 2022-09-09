@@ -11,6 +11,18 @@ display: flex;
   align-items: center;
 }
 
+.links{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
 p {
     font-family: 'Georgia';
     color: #F1CDB3;
