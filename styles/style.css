@@ -1,6 +1,7 @@
 .mainpage{
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     width: 1280px;
+    height: 908px;
     background-repeat: no-repeat;
 }
 
@@ -9,6 +10,7 @@ display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 180px;
 }
 
 .links{
@@ -31,17 +33,32 @@ a:hover{
 
 p {
     font-family: 'Georgia';
-    color: #F1CDB3;
-    font-size: 32px;
+    color: #FAFAFA;
+    font-size: 15px;
 }
 
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     
 }
+
+h1{
+    font-size: 44px;
+    color: #FAFAFA;
+}
+
+
 
 img{
     width: 698px;
     height: 728px;
+}
+.btm{
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    border: 0;
 }
