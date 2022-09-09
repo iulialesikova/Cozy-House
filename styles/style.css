@@ -1,3 +1,8 @@
+body{
+    width: 1280px;
+    height: 100vh;
+}
+
 .mainpage{
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     width: 1280px;
@@ -67,4 +72,20 @@ img{
     border-radius: 100px;
     background: #F1CDB3;
     border: 0;
+}
+
+.about-pets{
+    width: 300px;
+    height: 408px;
+    margin-right: 100px;
+}
+
+.abouthous{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-self: center;
+    padding-top: 80px;
+    width: 900px;
+    margin-left: 200px;
 }
