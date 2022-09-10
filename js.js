@@ -6,4 +6,9 @@ function makeUpperCase(str) {
         return str.toUpperCase()
        }
 
-sumMix = x => x.reduce((prev, curr) => +curr + prev, 0)
+sumMix = x => x.reduce((prev, curr) => +curr + prev, 0);
+
+function unusualFive() {
+    let five = 'Five!';
+  return five.length;
+  }
