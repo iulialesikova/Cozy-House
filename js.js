@@ -103,3 +103,8 @@ function even_or_odd(number) {
 function derive(coefficient, exponent) {
     return `${coefficient*exponent}x^${exponent-1}`
 }
+
+
+function boolToWord( bool ){
+    return bool ? 'Yes':'No';
+  }
