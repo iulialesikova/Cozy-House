@@ -58,3 +58,12 @@ function twoSort(s) {
   function positiveSum(arr) {
     return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
 }
+
+const string = 'hi there';
+const usingSplit = string.split('');
+const usingSpread = [...string];
+const usingArrayFrom = Array.from(string);
+const usingObjectAssign = Object.assign([], string);
+function stringToArray(string){
+  return string.split(' ');
+}
