@@ -67,3 +67,6 @@ const usingObjectAssign = Object.assign([], string);
 function stringToArray(string){
   return string.split(' ');
 }
+
+function maps(x){
+    return x.map(n => n * 2);}
