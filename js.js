@@ -54,3 +54,7 @@ String.prototype.digit = function() {
 function twoSort(s) {
     return s.sort()[0].split('').join('***');
   }
+
+  function positiveSum(arr) {
+    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+}
