@@ -70,3 +70,16 @@ function stringToArray(string){
 
 function maps(x){
     return x.map(n => n * 2);}
+
+
+const phrases = [
+    'not at all',
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+  ]
+  
+  const howMuchILoveYou = n => phrases[n % 6]
+  
