@@ -161,3 +161,7 @@ function increment(number, value = 1) {
 }
 console.log(increment(5, 2)); // returns 7
 console.log(increment(5)); // returns NaN
+
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+  }
