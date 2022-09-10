@@ -88,3 +88,7 @@ const howMuchILoveYou = n => phrases[n % 6]
 function removeChar(str) {
     return str.slice(1, -1);
 }
+
+const reverseSeq = n => {
+    return Array(n).fill(0).map((e, i) => n - i );
+  };
