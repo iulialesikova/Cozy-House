@@ -5,3 +5,5 @@ function getGrade (s1, s2, s3) {
 function makeUpperCase(str) {
         return str.toUpperCase()
        }
+
+sumMix = x => x.reduce((prev, curr) => +curr + prev, 0)
