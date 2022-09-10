@@ -90,7 +90,16 @@ function removeChar(str) {
 }
 
 const reverseSeq = n => {
-    return Array(n).fill(0).map((e, i) => n - i );
-  };
+    return Array(n).fill(0).map((e, i) => n - i);
+};
 
-  const nthEven=n=>n*2-2;
+const nthEven = n => n * 2 - 2;
+
+
+function even_or_odd(number) {
+    return number % 2 ? "Odd" : "Even"
+}
+
+function derive(coefficient, exponent) {
+    return `${coefficient*exponent}x^${exponent-1}`
+}
