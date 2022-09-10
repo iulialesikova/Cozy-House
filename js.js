@@ -105,6 +105,10 @@ function derive(coefficient, exponent) {
 }
 
 
-function boolToWord( bool ){
-    return bool ? 'Yes':'No';
-  }
+function boolToWord(bool) {
+    return bool ? 'Yes' : 'No';
+}
+
+function booleanToString(b) {
+    return b.toString();
+}
