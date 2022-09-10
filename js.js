@@ -42,3 +42,7 @@ function points(games) {
 }
 
 closeCompare = (a, b, margin) => Math.abs(a-b) <= margin ? 0 : Math.sign(a - b)
+
+String.prototype.digit = function() {
+    return /^\d$/.test(this);
+ };
