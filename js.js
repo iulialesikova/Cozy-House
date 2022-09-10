@@ -388,9 +388,33 @@ phoneticLookup("charlie");
 
 function checkObj(obj, checkProp) {
     // Only change code below this line
-  if (obj.hasOwnProperty(checkProp)) {
-      return obj[checkProp];
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
     } else {
-      return "Not Found";
-    }  // Only change code above this line
-  }
+        return "Not Found";
+    } // Only change code above this line
+}
+
+const myMusic = [{
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CS",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    },
+    {
+        "artist": "ABBA",
+        "title": "Ring Ring",
+        "release_year": 1973,
+        "formats": [
+            "CS",
+            "8T",
+            "LP",
+            "CD",
+        ]
+    }
+];
