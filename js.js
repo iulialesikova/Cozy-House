@@ -92,3 +92,5 @@ function removeChar(str) {
 const reverseSeq = n => {
     return Array(n).fill(0).map((e, i) => n - i );
   };
+
+  const nthEven=n=>n*2-2;
