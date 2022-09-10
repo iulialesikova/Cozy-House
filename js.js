@@ -112,3 +112,7 @@ function boolToWord(bool) {
 function booleanToString(b) {
     return b.toString();
 }
+
+function hexToDec(hexString){
+    return  parseInt(hexString, 16);
+   }
