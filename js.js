@@ -41,22 +41,22 @@ function points(games) {
     return sum;
 }
 
-closeCompare = (a, b, margin) => Math.abs(a-b) <= margin ? 0 : Math.sign(a - b)
+closeCompare = (a, b, margin) => Math.abs(a - b) <= margin ? 0 : Math.sign(a - b)
 
-String.prototype.digit = function() {
+String.prototype.digit = function () {
     return /^\d$/.test(this);
- };
+};
 
- function greet(name){
+function greet(name) {
     return `Hello, ${name} how are you doing today?`;
 }
 
 function twoSort(s) {
     return s.sort()[0].split('').join('***');
-  }
+}
 
-  function positiveSum(arr) {
-    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+function positiveSum(arr) {
+    return arr.reduce((a, b) => a + (b > 0 ? b : 0), 0);
 }
 
 const string = 'hi there';
@@ -64,12 +64,14 @@ const usingSplit = string.split('');
 const usingSpread = [...string];
 const usingArrayFrom = Array.from(string);
 const usingObjectAssign = Object.assign([], string);
-function stringToArray(string){
-  return string.split(' ');
+
+function stringToArray(string) {
+    return string.split(' ');
 }
 
-function maps(x){
-    return x.map(n => n * 2);}
+function maps(x) {
+    return x.map(n => n * 2);
+}
 
 
 const phrases = [
@@ -79,7 +81,10 @@ const phrases = [
     'a lot',
     'passionately',
     'madly',
-  ]
-  
-  const howMuchILoveYou = n => phrases[n % 6]
-  
+]
+
+const howMuchILoveYou = n => phrases[n % 6]
+
+function removeChar(str) {
+    return str.slice(1, -1);
+}
