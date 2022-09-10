@@ -46,3 +46,7 @@ closeCompare = (a, b, margin) => Math.abs(a-b) <= margin ? 0 : Math.sign(a - b)
 String.prototype.digit = function() {
     return /^\d$/.test(this);
  };
+
+ function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+}
