@@ -50,3 +50,7 @@ String.prototype.digit = function() {
  function greet(name){
     return `Hello, ${name} how are you doing today?`;
 }
+
+function twoSort(s) {
+    return s.sort()[0].split('').join('***');
+  }
