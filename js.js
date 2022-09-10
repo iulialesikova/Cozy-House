@@ -238,22 +238,36 @@ export const lowercaseString = (string) => {
     return string.toLowerCase()
 }
 
-import { uppercaseString, lowercaseString } from './string_functions.js'; 
+import {
+    uppercaseString,
+    lowercaseString
+} from './string_functions.js';
 // Only change code above this line
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
 
 "use strict";
-export default function subtract(x,y) {
-    return x-y;
+export default function subtract(x, y) {
+    return x - y;
 }
 
 import subtract from "./math_functions.js";
 // Only change code above this line
 
-subtract(7,4);
+subtract(7, 4);
 
 const makeServerRequest = new Promise((resolve, reject) => {
 
 })
+
+const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer represents a response from a server
+    let responseFromServer;
+
+    if (responseFromServer) {
+        resolve("We got the data");
+    } else {
+        reject("Data not received");
+    }
+});
