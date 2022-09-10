@@ -165,3 +165,5 @@ console.log(increment(5)); // returns NaN
 const sum = (...args) => {
     return args.reduce((a, b) => a + b, 0);
   }
+
+  const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
