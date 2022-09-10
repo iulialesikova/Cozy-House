@@ -338,28 +338,49 @@ const myDog = {
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"]
-  };
-  
-  // Only change code below this line
-  myDog.name = "Happy Coder";
+};
+
+// Only change code below this line
+myDog.name = "Happy Coder";
 
 
-  const myDog = {
+const myDog = {
     "name": "Happy Coder",
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"]
-  };
-  myDog.bark = "woof"; // Dot notation
-  myDog["bark"] = "woof";
-  
-  // Setup
+};
+myDog.bark = "woof"; // Dot notation
+myDog["bark"] = "woof";
+
+// Setup
 const myDog = {
     "name": "Happy Coder",
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"],
     "bark": "woof"
-  };
-  delete myDog.tails;
-  // Only change code below this line
+};
+delete myDog.tails;
+// Only change code below this line
+
+
+// Setup
+function phoneticLookup(val) {
+    let result = "";
+
+    // Only change code below this line
+    var lookup = {
+        alpha: 'Adams',
+        bravo: 'Boston',
+        charlie: 'Chicago',
+        delta: "Denver",
+        echo: "Easy",
+        foxtrot: "Frank"
+    };
+    return lookup[val]
+    // Only change code above this line
+    return result;
+}
+
+phoneticLookup("charlie");
