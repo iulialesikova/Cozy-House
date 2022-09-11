@@ -581,3 +581,7 @@ function sumArray(array) {
         .slice(1, array.length - 1)
         .reduce((a, b) => a + b, 0)
 }
+
+function position(letter){
+    return `Position of alphabet: ${letter.charCodeAt()-96}`
+  }
