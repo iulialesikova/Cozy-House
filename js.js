@@ -492,9 +492,18 @@ function correctTail(bod, tail) {
 
 function validateUsr(username) {
     return /^([a-z0-9_]){4,16}$/.test(username)
-  }
+}
 
-  function solution(str){
-  
+function solution(str) {
+
     return str.split('').reverse().join('');
-  }
+}
+
+function countPositivesSumNegatives(input) {
+    if (!input || !input.length) return []
+
+    let pos = input.filter(x => x > 0),
+        neg = input.filter(x => x <= 0)
+
+    return [pos.length, Math.floor(neg.reduce((s, v) => s + v, 0))]
+}
