@@ -507,3 +507,7 @@ function countPositivesSumNegatives(input) {
 
     return [pos.length, Math.floor(neg.reduce((s, v) => s + v, 0))]
 }
+
+function numberToString(num) {
+    return num.toString();
+  }
