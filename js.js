@@ -542,3 +542,7 @@ function well(x) {
     const count = x.reduce((s, v) => s + (v == 'good'), 0);
     return count ? count > 2 ? 'I smell a series!' : 'Publish!' : 'Fail!';
 }
+
+function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+   }
