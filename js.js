@@ -455,3 +455,7 @@ const secondTree = myPlants[1].list[1];
 function simpleMultiplication(number) {
     return number % 2 == 0 ? number * 8 : number * 9
 }
+function greet (name, owner) {
+    return name === owner ? 'Hello boss' :   'Hello guest';
+  }
+  
