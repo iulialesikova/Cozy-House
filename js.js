@@ -516,19 +516,24 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
     return (blueStart - bluePulled) / ((redStart - redPulled) + (blueStart - bluePulled))
 }
 
-function squareSum(numbers){
-    return numbers.reduce(function(sum, n){
-       return (n*n) + sum;
-     }, 0)
-   }
+function squareSum(numbers) {
+    return numbers.reduce(function (sum, n) {
+        return (n * n) + sum;
+    }, 0)
+}
 
-   function mergeArrays(arr1, arr2) {
-    return [...new Set(arr1.concat(arr2))].sort((arr1,arr2)=>arr1-arr2)
+function mergeArrays(arr1, arr2) {
+    return [...new Set(arr1.concat(arr2))].sort((arr1, arr2) => arr1 - arr2)
 }
 
 String.prototype.toAlternatingCase = function () {
-    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+    return this.split("").map(a => a === a.toUpperCase() ? a.toLowerCase() : a.toUpperCase()).join('')
 }
 
-function nearestSq(n){
-    return Math.round(n**0.5)**2}
+function nearestSq(n) {
+    return Math.round(n ** 0.5) ** 2
+}
+
+function distanceBetweenPoints(a, b) {
+    return Math.hypot(a.x - b.x, a.y - b.y);
+}
