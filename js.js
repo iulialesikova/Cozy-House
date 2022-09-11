@@ -529,3 +529,6 @@ function squareSum(numbers){
 String.prototype.toAlternatingCase = function () {
     return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
 }
+
+function nearestSq(n){
+    return Math.round(n**0.5)**2}
