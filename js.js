@@ -582,6 +582,10 @@ function sumArray(array) {
         .reduce((a, b) => a + b, 0)
 }
 
-function position(letter){
+function position(letter) {
     return `Position of alphabet: ${letter.charCodeAt()-96}`
-  }
+}
+
+function enough(cap, on, wait) {
+    return (on + wait > cap) ? on + wait - cap : 0;
+}
