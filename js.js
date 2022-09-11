@@ -458,4 +458,6 @@ function simpleMultiplication(number) {
 function greet (name, owner) {
     return name === owner ? 'Hello boss' :   'Hello guest';
   }
-  
+  function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+   }  
