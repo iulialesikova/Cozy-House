@@ -468,6 +468,11 @@ function contamination(text, char) {
     return char.repeat(text.length)
 }
 
-String.prototype.isUpperCase = function() {
+String.prototype.isUpperCase = function () {
     return this.toString() === this.toUpperCase()
- }
+}
+
+
+function digitize(n) {
+    return (n + '').split('').map(Number).reverse();
+}
