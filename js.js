@@ -545,4 +545,10 @@ function well(x) {
 
 function capitalizeWord(word) {
     return word[0].toUpperCase() + word.slice(1);
-   }
+}
+
+function howMuchWater(water, load, clothes) {
+    if (clothes > 2 * load) return 'Too much clothes'
+    if (clothes < load) return 'Not enough clothes'
+    return +((water * 1.1 ** (clothes - load)).toFixed(2))
+}
