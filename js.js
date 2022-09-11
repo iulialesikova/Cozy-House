@@ -510,4 +510,8 @@ function countPositivesSumNegatives(input) {
 
 function numberToString(num) {
     return num.toString();
-  }
+}
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    return (blueStart - bluePulled) / ((redStart - redPulled) + (blueStart - bluePulled))
+}
