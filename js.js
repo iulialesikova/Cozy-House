@@ -521,3 +521,11 @@ function squareSum(numbers){
        return (n*n) + sum;
      }, 0)
    }
+
+   function mergeArrays(arr1, arr2) {
+    return [...new Set(arr1.concat(arr2))].sort((arr1,arr2)=>arr1-arr2)
+}
+
+String.prototype.toAlternatingCase = function () {
+    return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+}
