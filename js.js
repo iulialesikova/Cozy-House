@@ -515,3 +515,9 @@ function numberToString(num) {
 function guessBlue(blueStart, redStart, bluePulled, redPulled) {
     return (blueStart - bluePulled) / ((redStart - redPulled) + (blueStart - bluePulled))
 }
+
+function squareSum(numbers){
+    return numbers.reduce(function(sum, n){
+       return (n*n) + sum;
+     }, 0)
+   }
