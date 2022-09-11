@@ -589,3 +589,9 @@ function position(letter) {
 function enough(cap, on, wait) {
     return (on + wait > cap) ? on + wait - cap : 0;
 }
+
+function sum (numbers) {
+    "use strict";
+     return numbers.reduce((a, b) => a + b, 0); 
+    
+};
