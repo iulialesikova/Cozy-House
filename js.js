@@ -565,7 +565,11 @@ function betterThanAverage(classPoints, yourPoints) {
     return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length;
 }
 
-function playerRankUp (points) {
-    if (points>=100) return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up."
+function playerRankUp(points) {
+    if (points >= 100) return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up."
     return false
-    }
+}
+
+function hero(bullets, dragons) {
+    return bullets >= dragons * 2
+}
