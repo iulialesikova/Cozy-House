@@ -556,6 +556,11 @@ function howMuchWater(water, load, clothes) {
 }
 
 
-function greet(name){
+function greet(name) {
     return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
- }
+}
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length;
+}
