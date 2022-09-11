@@ -478,10 +478,14 @@ function digitize(n) {
     return (n + '').split('').map(Number).reverse();
 }
 
-function binToDec(bin){
-    return parseInt(bin,2);
-  }
+function binToDec(bin) {
+    return parseInt(bin, 2);
+}
 
-  function repeatStr (n, s) {
+function repeatStr(n, s) {
     return s.repeat(n);
+}
+
+function correctTail(bod, tail) {
+    return bod[bod.length - 1] === tail
 }
