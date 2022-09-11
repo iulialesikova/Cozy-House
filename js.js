@@ -590,25 +590,29 @@ function enough(cap, on, wait) {
     return (on + wait > cap) ? on + wait - cap : 0;
 }
 
-function sum (numbers) {
+function sum(numbers) {
     "use strict";
-     return numbers.reduce((a, b) => a + b, 0); 
-    
+    return numbers.reduce((a, b) => a + b, 0);
+
 };
 
 const rps = (p1, p2) => {
-    if (p1==='scissors'&&p2==='paper') return `Player 1 won!`;
-    if (p1==='paper'&&p2==='rock') return `Player 1 won!`;
-    if (p1==='rock'&&p2==='scissors') return `Player 1 won!`;
-    if (p1==='paper'&&p2==='scissors') return `Player 2 won!`;
-    if (p1==='rock'&&p2==='paper') return `Player 2 won!`;
-    if (p1==='scissors'&&p2==='rock') return `Player 2 won!`;
-    if (p1==='scissors'&&p2==='scissors') return `Draw!`;
-    if (p1==='paper'&&p2==='paper') return `Draw!`;
-    if (p1==='rock'&&p2==='rock') return `Draw!`;
-    };
+    if (p1 === 'scissors' && p2 === 'paper') return `Player 1 won!`;
+    if (p1 === 'paper' && p2 === 'rock') return `Player 1 won!`;
+    if (p1 === 'rock' && p2 === 'scissors') return `Player 1 won!`;
+    if (p1 === 'paper' && p2 === 'scissors') return `Player 2 won!`;
+    if (p1 === 'rock' && p2 === 'paper') return `Player 2 won!`;
+    if (p1 === 'scissors' && p2 === 'rock') return `Player 2 won!`;
+    if (p1 === 'scissors' && p2 === 'scissors') return `Draw!`;
+    if (p1 === 'paper' && p2 === 'paper') return `Draw!`;
+    if (p1 === 'rock' && p2 === 'rock') return `Draw!`;
+};
 
 
-    function countSheeps(arrayOfSheeps) {
-        return arrayOfSheeps.filter(Boolean).length;
-      }
+function countSheeps(arrayOfSheeps) {
+    return arrayOfSheeps.filter(Boolean).length;
+}
+
+function pillars(numPill, dist, width) {
+    return numPill > 1 ? (numPill - 1) * dist * 100 + (numPill - 2) * width : 0;
+}
