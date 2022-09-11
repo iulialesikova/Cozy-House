@@ -467,3 +467,7 @@ function arrayPlusArray(arr1, arr2) {
 function contamination(text, char) {
     return char.repeat(text.length)
 }
+
+String.prototype.isUpperCase = function() {
+    return this.toString() === this.toUpperCase()
+ }
