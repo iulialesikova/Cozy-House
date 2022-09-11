@@ -473,6 +473,15 @@ String.prototype.isUpperCase = function () {
 }
 
 
+
 function digitize(n) {
     return (n + '').split('').map(Number).reverse();
+}
+
+function binToDec(bin){
+    return parseInt(bin,2);
+  }
+
+  function repeatStr (n, s) {
+    return s.repeat(n);
 }
