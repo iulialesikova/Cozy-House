@@ -455,9 +455,15 @@ const secondTree = myPlants[1].list[1];
 function simpleMultiplication(number) {
     return number % 2 == 0 ? number * 8 : number * 9
 }
-function greet (name, owner) {
-    return name === owner ? 'Hello boss' :   'Hello guest';
-  }
-  function arrayPlusArray(arr1, arr2) {
+
+function greet(name, owner) {
+    return name === owner ? 'Hello boss' : 'Hello guest';
+}
+
+function arrayPlusArray(arr1, arr2) {
     return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
-   }  
+}
+
+function contamination(text, char) {
+    return char.repeat(text.length)
+}
