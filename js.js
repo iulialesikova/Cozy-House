@@ -493,3 +493,8 @@ function correctTail(bod, tail) {
 function validateUsr(username) {
     return /^([a-z0-9_]){4,16}$/.test(username)
   }
+
+  function solution(str){
+  
+    return str.split('').reverse().join('');
+  }
