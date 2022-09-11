@@ -620,3 +620,8 @@ function pillars(numPill, dist, width) {
 function setAlarm(employed, vacation){
     return employed && !vacation;
   }
+
+
+  function reverseList(list) {
+    return list.reverse();
+  }
