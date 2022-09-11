@@ -450,3 +450,8 @@ const myPlants = [{
 // Only change code below this line
 
 const secondTree = myPlants[1].list[1];
+
+
+function simpleMultiplication(number) {
+    return number % 2 == 0 ? number * 8 : number * 9
+}
